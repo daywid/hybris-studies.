@@ -1,0 +1,9 @@
+!/bin/modules
+/log
+/roles
+/temp
+/data
+*.log
+data/hsqldb/mydb.lck
+data
+data/hsqldb/mydb.data

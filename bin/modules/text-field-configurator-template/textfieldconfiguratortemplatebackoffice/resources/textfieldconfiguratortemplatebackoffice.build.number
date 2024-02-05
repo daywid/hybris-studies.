@@ -1,0 +1,11 @@
+#Ant properties
+#Tue Aug 02 06:38:44 CEST 2022
+version.api=2205
+vendor=hybris
+group.id=de.hybris.platform
+name=textfieldconfiguratortemplatebackoffice
+description=textfieldconfiguratortemplatebackoffice
+builddate=20220802 0636
+releasedate=20220601 2009
+version=2205.2
+module.name=platform-module
