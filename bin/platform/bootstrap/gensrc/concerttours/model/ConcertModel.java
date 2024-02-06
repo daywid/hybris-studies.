@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 6 de fev. de 2024 12:57:40                  ---
+ * --- Generated at 6 de fev. de 2024 13:19:27                  ---
  * ----------------------------------------------------------------
  */
 package concerttours.model;
@@ -32,6 +32,9 @@ public class ConcertModel extends VariantProductModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>Concert.concertType</code> attribute defined at extension <code>concerttours</code>. */
 	public static final String CONCERTTYPE = "concertType";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>Concert.daysUntil</code> attribute defined at extension <code>concerttours</code>. */
+	public static final String DAYSUNTIL = "daysUntil";
 	
 	
 	/**
@@ -104,6 +107,16 @@ public class ConcertModel extends VariantProductModel
 	public Date getDate()
 	{
 		return getPersistenceContext().getPropertyValue(DATE);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>Concert.daysUntil</code> dynamic attribute defined at extension <code>concerttours</code>. 
+	 * @return the daysUntil
+	 */
+	@Accessor(qualifier = "daysUntil", type = Accessor.Type.GETTER)
+	public Long getDaysUntil()
+	{
+		return getPersistenceContext().getDynamicValue(this,DAYSUNTIL);
 	}
 	
 	/**
