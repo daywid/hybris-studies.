@@ -1,4 +1,3 @@
-// Hybris123SnippetStart concerttours.facades.impl.DefaultTourFacade
 package concerttours.facades.impl;
 import de.hybris.platform.core.model.product.ProductModel;
 import de.hybris.platform.product.ProductService;
@@ -59,4 +58,3 @@ public class DefaultTourFacade implements TourFacade
         this.productService = productService;
     }
 }
-//Hybris123SnippetEnd

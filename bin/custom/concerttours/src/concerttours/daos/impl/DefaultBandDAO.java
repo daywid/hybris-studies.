@@ -1,6 +1,4 @@
 package concerttours.daos.impl;
-
-
 import de.hybris.platform.servicelayer.search.FlexibleSearchQuery;
 import de.hybris.platform.servicelayer.search.FlexibleSearchService;
 import java.util.List;

@@ -1,7 +1,7 @@
 package concerttours.facades;
-
-public interface TourFacade {
-    
+import concerttours.data.TourData;
+ 
+public interface TourFacade
+{
     TourData getTourDetails(final String tourId);
-
 }
