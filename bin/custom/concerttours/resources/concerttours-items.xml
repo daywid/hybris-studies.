@@ -51,19 +51,19 @@
         <attributes>
             <attribute qualifier="venue" type="java.lang.String">
                 <description>venue of concert</description>
-                <persistence type="property" />
+                    <persistence type="property" />
             </attribute>
             <attribute qualifier="date" type="java.util.Date">
                  <description>date of concert</description>
-                <persistence type="property" />
+                    <persistence type="property" />
             </attribute>
             <attribute qualifier="concertType" type="ConcertType">
                 <description>type of concert (indoors or open air)</description>
-                <persistence type="property" />
+                    <persistence type="property" />
             </attribute>
             <attribute qualifier="daysUntil" type="java.lang.Long">
-                <persistence type="dynamic" attributeHandler="concertDaysUntilAttributeHandler" />
-              <modifiers read="true" write="false" />
+                    <persistence type="dynamic" attributeHandler="concertDaysUntilAttributeHandler" />
+                    <modifiers read="true" write="false" />
         </attribute>
          </attributes>
      </itemtype>
@@ -74,7 +74,7 @@
       <attributes>
         <attribute qualifier="hashtag" type="java.lang.String">
           <description>hashtag of concert tour for social media</description>
-          <persistence type="property" />
+                    <persistence type="property" />
         </attribute>
       </attributes>
     </itemtype>
@@ -82,27 +82,45 @@
 
     <!-- Hybris123SnippetStart concerttours-items.xml_Band -->
     <itemtype generate="true" code="Band" autocreate="true">
-        <deployment table="Bands" typecode="30268" />
+            <deployment table="Bands" typecode="30268" />
         <attributes>
             <attribute qualifier="code" type="java.lang.String">
                 <description>short unique code of band</description>
-                <persistence type="property" />
+                    <persistence type="property" />
             </attribute>
             <attribute qualifier="name" type="java.lang.String">
                 <description>name of band</description>
-                <persistence type="property" />
+                    <persistence type="property" />
             </attribute>
             <attribute qualifier="history" type="java.lang.String">
                 <description>history of band</description>
-                <persistence type="property" />
+                    <persistence type="property" />
             </attribute>
             <attribute qualifier="albumSales" type="java.lang.Long">
                 <description>official global album sales</description>
-                <persistence type="property" />
+                    <persistence type="property" />
             </attribute>
         </attributes>
     </itemtype>
     <!-- Hybris123SnippetEnd -->
+
+    <itemtype generate="true" code="News" autocreate="true">
+        <deployment table="News" typecode="30270" />
+        <attributes>
+            <attribute qualifier="date" type="java.util.Date">
+                <description>date of news item</description>
+                <persistence type="property" />
+            </attribute>
+            <attribute qualifier="headline" type="java.lang.String">
+                <description>short headline for the news item</description>
+                <persistence type="property" />
+            </attribute>
+            <attribute qualifier="content" type="java.lang.String">
+                <description>fuller description of the news item</description>
+                <persistence type="property" />
+            </attribute>
+        </attributes>    
+       </itemtype>
    
   </itemtypes>
 
