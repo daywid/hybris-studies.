@@ -7,3 +7,5 @@ hybris/bin/modules
 data/hsqldb/mydb.lck
 data/hsqldb/mydb.data
 *.zip
+bin/custom/.idea
+bin/modules
