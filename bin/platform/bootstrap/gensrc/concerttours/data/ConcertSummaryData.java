@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN!
- * --- Generated at 6 de fev. de 2024 13:49:40
+ * --- Generated at 7 de fev. de 2024 08:40:52
  * ----------------------------------------------------------------
  *
  * Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved.
@@ -39,6 +39,10 @@ public  class ConcertSummaryData  implements Serializable
 	/** <i>Generated property</i> for <code>ConcertSummaryData.type</code> property defined at extension <code>concerttours</code>. */
 	
 	private String type;
+
+	/** <i>Generated property</i> for <code>ConcertSummaryData.countDown</code> property defined at extension <code>concerttours</code>. */
+	
+	private Long countDown;
 	
 	public ConcertSummaryData()
 	{
@@ -83,6 +87,16 @@ public  class ConcertSummaryData  implements Serializable
 	public String getType() 
 	{
 		return type;
+	}
+	
+	public void setCountDown(final Long countDown)
+	{
+		this.countDown = countDown;
+	}
+
+	public Long getCountDown() 
+	{
+		return countDown;
 	}
 	
 

@@ -14,7 +14,6 @@ import java.util.Locale;
 public class DefaultBandFacade implements BandFacade
 {
     private BandService bandService;
-
     @Override
     public List<BandData> getBands()
     {
@@ -31,7 +30,6 @@ public class DefaultBandFacade implements BandFacade
         }
         return bandFacadeData;
     }
-    
     @Override
     public BandData getBand(final String name)
     {
