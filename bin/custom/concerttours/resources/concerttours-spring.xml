@@ -27,6 +27,8 @@
 	<alias name="defaultBandFacade" alias="bandFacade" />
 	<bean id="defaultBandFacade" class="concerttours.facades.impl.DefaultBandFacade">
 		<property name="bandService" ref="bandService" />
+		<property name="mediaService" ref="mediaService" />
+		<property name="configurationService" ref="configurationService" />
 	</bean>
 	<alias name="defaultTourFacade" alias="tourFacade" />
 	<bean id="defaultTourFacade" class="concerttours.facades.impl.DefaultTourFacade">
@@ -70,6 +72,7 @@
 		parent="abstractEventListener">
 		<property name="modelService" ref="modelService" />
 	</bean>
+
 
 
 
