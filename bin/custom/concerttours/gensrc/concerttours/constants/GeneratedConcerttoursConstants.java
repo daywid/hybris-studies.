@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 8 de fev. de 2024 10:08:19                  ---
+ * --- Generated at 8 de fev. de 2024 11:09:13                  ---
  * ----------------------------------------------------------------
  */
 package concerttours.constants;
@@ -21,6 +21,7 @@ public class GeneratedConcerttoursConstants
 		public static final String CONCERTTYPE = "ConcertType".intern();
 		public static final String MUSICTYPE = "MusicType".intern();
 		public static final String NEWS = "News".intern();
+		public static final String NOTLOREMIPSUMCONSTRAINT = "NotLoremIpsumConstraint".intern();
 	}
 	public static class Attributes
 	{
