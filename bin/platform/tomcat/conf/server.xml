@@ -179,8 +179,26 @@
 				</JarScanner>
 			</Context>
 
+			<!-- 'backoffice' extension's context for tenant 'master' -->
+			<Context path="/backoffice" docBase="/home/meisters/SAP/CXCOMM220500P_2-80006942/hybris/bin/modules/backoffice-framework/backoffice/web/webroot" >
+				<Manager pathname="" />
+				<Loader platformHome="/home/meisters/SAP/CXCOMM220500P_2-80006942/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<JarScanner >
+					<JarScanFilter defaultTldScan="false" tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar" defaultPluggabilityScan="false" pluggabilityScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan},taglibs-standard-impl*.jar,spring-security-taglibs-*.jar,spring-webmvc*.jar,webfragment*.jar" />
+				</JarScanner>
+			</Context>
+
 			<!-- 'concerttours' extension's context for tenant 'master' -->
 			<Context path="/concerttours" docBase="/home/meisters/SAP/CXCOMM220500P_2-80006942/hybris/bin/custom/concerttours/web/webroot" >
+				<Manager pathname="" />
+				<Loader platformHome="/home/meisters/SAP/CXCOMM220500P_2-80006942/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
+				<JarScanner >
+					<JarScanFilter defaultTldScan="true" defaultPluggabilityScan="true" />
+				</JarScanner>
+			</Context>
+
+			<!-- 'yempty' extension's context for tenant 'master' -->
+			<Context path="/yempty" docBase="/home/meisters/SAP/CXCOMM220500P_2-80006942/hybris/bin/modules/platform/yempty/web/webroot" >
 				<Manager pathname="" />
 				<Loader platformHome="/home/meisters/SAP/CXCOMM220500P_2-80006942/hybris/bin/platform" className="de.hybris.tomcat.HybrisWebappLoader" deployName="default" />
 				<JarScanner >

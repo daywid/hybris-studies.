@@ -1,13 +1,15 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 7 de fev. de 2024 13:36:15                  ---
+ * --- Generated at 8 de fev. de 2024 08:56:39                  ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved.
  */
 package de.hybris.platform.core.model.user;
 
+import com.hybris.backoffice.model.BackofficeObjectSpecialCollectionModel;
+import com.hybris.backoffice.model.ThemeModel;
 import de.hybris.bootstrap.annotations.Accessor;
 import de.hybris.platform.catalog.model.CatalogVersionModel;
 import de.hybris.platform.comments.model.AbstractCommentModel;
@@ -16,6 +18,7 @@ import de.hybris.platform.core.enums.RetentionState;
 import de.hybris.platform.core.model.ItemModel;
 import de.hybris.platform.core.model.c2l.CurrencyModel;
 import de.hybris.platform.core.model.c2l.LanguageModel;
+import de.hybris.platform.core.model.media.MediaModel;
 import de.hybris.platform.core.model.order.CartModel;
 import de.hybris.platform.core.model.order.OrderModel;
 import de.hybris.platform.core.model.order.QuoteModel;
@@ -154,6 +157,15 @@ public class UserModel extends PrincipalModel
 	/** <i>Generated constant</i> - Attribute key of <code>User.assignedComments</code> attribute defined at extension <code>comments</code>. */
 	public static final String ASSIGNEDCOMMENTS = "assignedComments";
 	
+	/** <i>Generated constant</i> - Attribute key of <code>User.themeForBackoffice</code> attribute defined at extension <code>backoffice</code>. */
+	public static final String THEMEFORBACKOFFICE = "themeForBackoffice";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>User.avatar</code> attribute defined at extension <code>backoffice</code>. */
+	public static final String AVATAR = "avatar";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>User.collectionPks</code> attribute defined at extension <code>backoffice</code>. */
+	public static final String COLLECTIONPKS = "collectionPks";
+	
 	
 	/**
 	 * <i>Generated constructor</i> - Default constructor for generic creation.
@@ -237,6 +249,16 @@ public class UserModel extends PrincipalModel
 	}
 	
 	/**
+	 * <i>Generated method</i> - Getter of the <code>User.avatar</code> attribute defined at extension <code>backoffice</code>. 
+	 * @return the avatar
+	 */
+	@Accessor(qualifier = "avatar", type = Accessor.Type.GETTER)
+	public MediaModel getAvatar()
+	{
+		return getPersistenceContext().getPropertyValue(AVATAR);
+	}
+	
+	/**
 	 * <i>Generated method</i> - Getter of the <code>User.carts</code> attribute defined at extension <code>core</code>. 
 	 * Consider using FlexibleSearchService::searchRelation for pagination support of large result sets.
 	 * @return the carts
@@ -245,6 +267,17 @@ public class UserModel extends PrincipalModel
 	public Collection<CartModel> getCarts()
 	{
 		return getPersistenceContext().getPropertyValue(CARTS);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>User.collectionPks</code> attribute defined at extension <code>backoffice</code>. 
+	 * Consider using FlexibleSearchService::searchRelation for pagination support of large result sets.
+	 * @return the collectionPks
+	 */
+	@Accessor(qualifier = "collectionPks", type = Accessor.Type.GETTER)
+	public Collection<BackofficeObjectSpecialCollectionModel> getCollectionPks()
+	{
+		return getPersistenceContext().getPropertyValue(COLLECTIONPKS);
 	}
 	
 	/**
@@ -505,6 +538,16 @@ public class UserModel extends PrincipalModel
 	}
 	
 	/**
+	 * <i>Generated method</i> - Getter of the <code>User.themeForBackoffice</code> attribute defined at extension <code>backoffice</code>. 
+	 * @return the themeForBackoffice
+	 */
+	@Accessor(qualifier = "themeForBackoffice", type = Accessor.Type.GETTER)
+	public ThemeModel getThemeForBackoffice()
+	{
+		return getPersistenceContext().getPropertyValue(THEMEFORBACKOFFICE);
+	}
+	
+	/**
 	 * <i>Generated method</i> - Getter of the <code>User.tokens</code> attribute defined at extension <code>oauth2</code>. 
 	 * Consider using FlexibleSearchService::searchRelation for pagination support of large result sets.
 	 * @return the tokens
@@ -558,6 +601,17 @@ public class UserModel extends PrincipalModel
 	}
 	
 	/**
+	 * <i>Generated method</i> - Setter of <code>User.avatar</code> attribute defined at extension <code>backoffice</code>. 
+	 *  
+	 * @param value the avatar
+	 */
+	@Accessor(qualifier = "avatar", type = Accessor.Type.SETTER)
+	public void setAvatar(final MediaModel value)
+	{
+		getPersistenceContext().setPropertyValue(AVATAR, value);
+	}
+	
+	/**
 	 * <i>Generated method</i> - Setter of <code>User.carts</code> attribute defined at extension <code>core</code>. 
 	 *  
 	 * @param value the carts
@@ -566,6 +620,17 @@ public class UserModel extends PrincipalModel
 	public void setCarts(final Collection<CartModel> value)
 	{
 		getPersistenceContext().setPropertyValue(CARTS, value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of <code>User.collectionPks</code> attribute defined at extension <code>backoffice</code>. 
+	 *  
+	 * @param value the collectionPks
+	 */
+	@Accessor(qualifier = "collectionPks", type = Accessor.Type.SETTER)
+	public void setCollectionPks(final Collection<BackofficeObjectSpecialCollectionModel> value)
+	{
+		getPersistenceContext().setPropertyValue(COLLECTIONPKS, value);
 	}
 	
 	/**
@@ -841,6 +906,17 @@ public class UserModel extends PrincipalModel
 	public void setSessionLanguage(final LanguageModel value)
 	{
 		getPersistenceContext().setPropertyValue(SESSIONLANGUAGE, value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of <code>User.themeForBackoffice</code> attribute defined at extension <code>backoffice</code>. 
+	 *  
+	 * @param value the themeForBackoffice
+	 */
+	@Accessor(qualifier = "themeForBackoffice", type = Accessor.Type.SETTER)
+	public void setThemeForBackoffice(final ThemeModel value)
+	{
+		getPersistenceContext().setPropertyValue(THEMEFORBACKOFFICE, value);
 	}
 	
 	/**

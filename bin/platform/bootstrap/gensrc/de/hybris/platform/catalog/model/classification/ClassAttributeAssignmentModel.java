@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 7 de fev. de 2024 13:36:15                  ---
+ * --- Generated at 8 de fev. de 2024 08:56:39                  ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved.
@@ -93,6 +93,9 @@ public class ClassAttributeAssignmentModel extends ItemModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>ClassAttributeAssignment.attributeValueDisplayString</code> attribute defined at extension <code>catalog</code>. */
 	public static final String ATTRIBUTEVALUEDISPLAYSTRING = "attributeValueDisplayString";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>ClassAttributeAssignment.enableWysiwygEditor</code> attribute defined at extension <code>platformbackoffice</code>. */
+	public static final String ENABLEWYSIWYGEDITOR = "enableWysiwygEditor";
 	
 	
 	/**
@@ -236,6 +239,16 @@ public class ClassAttributeAssignmentModel extends ItemModel
 	public String getDescription(final Locale loc)
 	{
 		return getPersistenceContext().getLocalizedValue(DESCRIPTION, loc);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>ClassAttributeAssignment.enableWysiwygEditor</code> attribute defined at extension <code>platformbackoffice</code>. 
+	 * @return the enableWysiwygEditor
+	 */
+	@Accessor(qualifier = "enableWysiwygEditor", type = Accessor.Type.GETTER)
+	public Boolean getEnableWysiwygEditor()
+	{
+		return getPersistenceContext().getPropertyValue(ENABLEWYSIWYGEDITOR);
 	}
 	
 	/**
@@ -454,6 +467,17 @@ public class ClassAttributeAssignmentModel extends ItemModel
 	public void setDescription(final String value, final Locale loc)
 	{
 		getPersistenceContext().setLocalizedValue(DESCRIPTION, loc, value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of <code>ClassAttributeAssignment.enableWysiwygEditor</code> attribute defined at extension <code>platformbackoffice</code>. 
+	 *  
+	 * @param value the enableWysiwygEditor
+	 */
+	@Accessor(qualifier = "enableWysiwygEditor", type = Accessor.Type.SETTER)
+	public void setEnableWysiwygEditor(final Boolean value)
+	{
+		getPersistenceContext().setPropertyValue(ENABLEWYSIWYGEDITOR, value);
 	}
 	
 	/**

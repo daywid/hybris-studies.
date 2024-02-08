@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 7 de fev. de 2024 13:36:15                  ---
+ * --- Generated at 8 de fev. de 2024 08:56:39                  ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved.
@@ -30,6 +30,12 @@ public class AbstractWorkflowDecisionModel extends ItemModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>AbstractWorkflowDecision.description</code> attribute defined at extension <code>workflow</code>. */
 	public static final String DESCRIPTION = "description";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>AbstractWorkflowDecision.visualisationX</code> attribute defined at extension <code>backoffice</code>. */
+	public static final String VISUALISATIONX = "visualisationX";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>AbstractWorkflowDecision.visualisationY</code> attribute defined at extension <code>backoffice</code>. */
+	public static final String VISUALISATIONY = "visualisationY";
 	
 	
 	/**
@@ -117,6 +123,26 @@ public class AbstractWorkflowDecisionModel extends ItemModel
 	}
 	
 	/**
+	 * <i>Generated method</i> - Getter of the <code>AbstractWorkflowDecision.visualisationX</code> attribute defined at extension <code>backoffice</code>. 
+	 * @return the visualisationX
+	 */
+	@Accessor(qualifier = "visualisationX", type = Accessor.Type.GETTER)
+	public Integer getVisualisationX()
+	{
+		return getPersistenceContext().getPropertyValue(VISUALISATIONX);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>AbstractWorkflowDecision.visualisationY</code> attribute defined at extension <code>backoffice</code>. 
+	 * @return the visualisationY
+	 */
+	@Accessor(qualifier = "visualisationY", type = Accessor.Type.GETTER)
+	public Integer getVisualisationY()
+	{
+		return getPersistenceContext().getPropertyValue(VISUALISATIONY);
+	}
+	
+	/**
 	 * <i>Generated method</i> - Initial setter of <code>AbstractWorkflowDecision.code</code> attribute defined at extension <code>workflow</code>. Can only be used at creation of model - before first save.  
 	 *  
 	 * @param value the code - unique identifier of the decision
@@ -171,6 +197,28 @@ public class AbstractWorkflowDecisionModel extends ItemModel
 	public void setName(final String value, final Locale loc)
 	{
 		getPersistenceContext().setLocalizedValue(NAME, loc, value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of <code>AbstractWorkflowDecision.visualisationX</code> attribute defined at extension <code>backoffice</code>. 
+	 *  
+	 * @param value the visualisationX
+	 */
+	@Accessor(qualifier = "visualisationX", type = Accessor.Type.SETTER)
+	public void setVisualisationX(final Integer value)
+	{
+		getPersistenceContext().setPropertyValue(VISUALISATIONX, value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of <code>AbstractWorkflowDecision.visualisationY</code> attribute defined at extension <code>backoffice</code>. 
+	 *  
+	 * @param value the visualisationY
+	 */
+	@Accessor(qualifier = "visualisationY", type = Accessor.Type.SETTER)
+	public void setVisualisationY(final Integer value)
+	{
+		getPersistenceContext().setPropertyValue(VISUALISATIONY, value);
 	}
 	
 }

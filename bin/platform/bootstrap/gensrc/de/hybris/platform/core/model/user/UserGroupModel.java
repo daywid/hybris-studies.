@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 7 de fev. de 2024 13:36:15                  ---
+ * --- Generated at 8 de fev. de 2024 08:56:39                  ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved.
@@ -15,6 +15,7 @@ import de.hybris.platform.core.model.security.PrincipalGroupModel;
 import de.hybris.platform.europe1.enums.UserDiscountGroup;
 import de.hybris.platform.europe1.enums.UserPriceGroup;
 import de.hybris.platform.europe1.enums.UserTaxGroup;
+import de.hybris.platform.platformbackoffice.model.BackofficeSavedQueryModel;
 import de.hybris.platform.servicelayer.model.ItemModelContext;
 import java.util.Collection;
 
@@ -26,6 +27,9 @@ public class UserGroupModel extends PrincipalGroupModel
 {
 	/**<i>Generated model type code constant.</i>*/
 	public static final String _TYPECODE = "UserGroup";
+	
+	/**<i>Generated relation code constant for relation <code>BackofficeSavedQuery2UserGroupRelation</code> defining source attribute <code>savedQueries</code> in extension <code>platformbackoffice</code>.</i>*/
+	public static final String _BACKOFFICESAVEDQUERY2USERGROUPRELATION = "BackofficeSavedQuery2UserGroupRelation";
 	
 	/** <i>Generated constant</i> - Attribute key of <code>UserGroup.writeableLanguages</code> attribute defined at extension <code>core</code>. */
 	public static final String WRITEABLELANGUAGES = "writeableLanguages";
@@ -47,6 +51,9 @@ public class UserGroupModel extends PrincipalGroupModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>UserGroup.userTaxGroup</code> attribute defined at extension <code>europe1</code>. */
 	public static final String USERTAXGROUP = "userTaxGroup";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>UserGroup.savedQueries</code> attribute defined at extension <code>platformbackoffice</code>. */
+	public static final String SAVEDQUERIES = "savedQueries";
 	
 	
 	/**
@@ -126,6 +133,17 @@ public class UserGroupModel extends PrincipalGroupModel
 	}
 	
 	/**
+	 * <i>Generated method</i> - Getter of the <code>UserGroup.savedQueries</code> attribute defined at extension <code>platformbackoffice</code>. 
+	 * Consider using FlexibleSearchService::searchRelation for pagination support of large result sets.
+	 * @return the savedQueries
+	 */
+	@Accessor(qualifier = "savedQueries", type = Accessor.Type.GETTER)
+	public Collection<BackofficeSavedQueryModel> getSavedQueries()
+	{
+		return getPersistenceContext().getPropertyValue(SAVEDQUERIES);
+	}
+	
+	/**
 	 * <i>Generated method</i> - Getter of the <code>UserGroup.userDiscountGroup</code> attribute defined at extension <code>europe1</code>. 
 	 * @return the userDiscountGroup
 	 */
@@ -198,6 +216,17 @@ public class UserGroupModel extends PrincipalGroupModel
 	public void setReadableLanguages(final Collection<LanguageModel> value)
 	{
 		getPersistenceContext().setPropertyValue(READABLELANGUAGES, value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of <code>UserGroup.savedQueries</code> attribute defined at extension <code>platformbackoffice</code>. 
+	 *  
+	 * @param value the savedQueries
+	 */
+	@Accessor(qualifier = "savedQueries", type = Accessor.Type.SETTER)
+	public void setSavedQueries(final Collection<BackofficeSavedQueryModel> value)
+	{
+		getPersistenceContext().setPropertyValue(SAVEDQUERIES, value);
 	}
 	
 	/**

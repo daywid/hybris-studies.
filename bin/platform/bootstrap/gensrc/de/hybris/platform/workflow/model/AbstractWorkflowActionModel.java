@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 7 de fev. de 2024 13:36:15                  ---
+ * --- Generated at 8 de fev. de 2024 08:56:39                  ---
  * ----------------------------------------------------------------
  *  
  * Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved.
@@ -67,6 +67,12 @@ public class AbstractWorkflowActionModel extends ItemModel
 	
 	/** <i>Generated constant</i> - Attribute key of <code>AbstractWorkflowAction.workflowActionComments</code> attribute defined at extension <code>workflow</code>. */
 	public static final String WORKFLOWACTIONCOMMENTS = "workflowActionComments";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>AbstractWorkflowAction.visualisationX</code> attribute defined at extension <code>backoffice</code>. */
+	public static final String VISUALISATIONX = "visualisationX";
+	
+	/** <i>Generated constant</i> - Attribute key of <code>AbstractWorkflowAction.visualisationY</code> attribute defined at extension <code>backoffice</code>. */
+	public static final String VISUALISATIONY = "visualisationY";
 	
 	
 	/**
@@ -265,6 +271,26 @@ public class AbstractWorkflowActionModel extends ItemModel
 	}
 	
 	/**
+	 * <i>Generated method</i> - Getter of the <code>AbstractWorkflowAction.visualisationX</code> attribute defined at extension <code>backoffice</code>. 
+	 * @return the visualisationX
+	 */
+	@Accessor(qualifier = "visualisationX", type = Accessor.Type.GETTER)
+	public Integer getVisualisationX()
+	{
+		return getPersistenceContext().getPropertyValue(VISUALISATIONX);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Getter of the <code>AbstractWorkflowAction.visualisationY</code> attribute defined at extension <code>backoffice</code>. 
+	 * @return the visualisationY
+	 */
+	@Accessor(qualifier = "visualisationY", type = Accessor.Type.GETTER)
+	public Integer getVisualisationY()
+	{
+		return getPersistenceContext().getPropertyValue(VISUALISATIONY);
+	}
+	
+	/**
 	 * <i>Generated method</i> - Getter of the <code>AbstractWorkflowAction.workflowActionComments</code> attribute defined at extension <code>workflow</code>. 
 	 * Consider using FlexibleSearchService::searchRelation for pagination support of large result sets.
 	 * @return the workflowActionComments
@@ -426,6 +452,28 @@ public class AbstractWorkflowActionModel extends ItemModel
 	public void setSuccessors(final List<AbstractWorkflowActionModel> value)
 	{
 		getPersistenceContext().setPropertyValue(SUCCESSORS, value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of <code>AbstractWorkflowAction.visualisationX</code> attribute defined at extension <code>backoffice</code>. 
+	 *  
+	 * @param value the visualisationX
+	 */
+	@Accessor(qualifier = "visualisationX", type = Accessor.Type.SETTER)
+	public void setVisualisationX(final Integer value)
+	{
+		getPersistenceContext().setPropertyValue(VISUALISATIONX, value);
+	}
+	
+	/**
+	 * <i>Generated method</i> - Setter of <code>AbstractWorkflowAction.visualisationY</code> attribute defined at extension <code>backoffice</code>. 
+	 *  
+	 * @param value the visualisationY
+	 */
+	@Accessor(qualifier = "visualisationY", type = Accessor.Type.SETTER)
+	public void setVisualisationY(final Integer value)
+	{
+		getPersistenceContext().setPropertyValue(VISUALISATIONY, value);
 	}
 	
 	/**
