@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at 8 de fev. de 2024 09:34:22                  ---
+ * --- Generated at 8 de fev. de 2024 10:08:19                  ---
  * ----------------------------------------------------------------
  */
 package concerttours.model;
@@ -64,14 +64,28 @@ public class BandModel extends ItemModel
 	}
 	
 	/**
+	 * <i>Generated constructor</i> - Constructor with all mandatory attributes.
+	 * @deprecated since 4.1.1 Please use the default constructor without parameters
+	 * @param _name initial attribute declared by type <code>Band</code> at extension <code>concerttours</code>
+	 */
+	@Deprecated(since = "4.1.1", forRemoval = true)
+	public BandModel(final String _name)
+	{
+		super();
+		setName(_name);
+	}
+	
+	/**
 	 * <i>Generated constructor</i> - for all mandatory and initial attributes.
 	 * @deprecated since 4.1.1 Please use the default constructor without parameters
+	 * @param _name initial attribute declared by type <code>Band</code> at extension <code>concerttours</code>
 	 * @param _owner initial attribute declared by type <code>Item</code> at extension <code>core</code>
 	 */
 	@Deprecated(since = "4.1.1", forRemoval = true)
-	public BandModel(final ItemModel _owner)
+	public BandModel(final String _name, final ItemModel _owner)
 	{
 		super();
+		setName(_name);
 		setOwner(_owner);
 	}
 	
