@@ -5,3 +5,7 @@ Replace the content of the file with the following lines.
 export HYBRIS_HOME_DIR=/opt/CXCOMM210500P_X-XXXXXXXX
 export ANT_HOME=${HYBRIS_HOME_DIR}/hybris/bin/platform/apache-ant
 export PATH=${PATH}:${ANT_HOME}/bin
+
+
+sap composable storefront install without credentials:
+https://github.com/SAP/spartacus/blob/release/6.0.x/docs/self-publishing-spartacus-libraries.md
